@@ -317,9 +317,13 @@ header {
 }
 
 .collection-image-placeholder {
-    width: 100%;       /* Ocupa a largura total da coluna */
-    height: 250px;     /* Mantém a altura fixa que você já tinha */
-    object-fit: cover; /* ESSA É A PRINCIPAL: corta a foto sem esticar */
+    width: 100%;
+    aspect-ratio: 3 / 4;     /* Mais alta que larga */
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 15px;
 }
 
 .collection-item:hover .collection-image-placeholder {

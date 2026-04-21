@@ -317,11 +317,9 @@ header {
 }
 
 .collection-image-placeholder {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  background-color: var(--gray-placeholder);
-  margin-bottom: 24px;
-  transition: opacity 0.4s ease;
+    width: 100%;       /* Ocupa a largura total da coluna */
+    height: 250px;     /* Mantém a altura fixa que você já tinha */
+    object-fit: cover; /* ESSA É A PRINCIPAL: corta a foto sem esticar */
 }
 
 .collection-item:hover .collection-image-placeholder {
